@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.shiro.markethub.R
+import com.shiro.markethub.navigation.ROUT_HOME
 
 
 @Composable
@@ -66,7 +67,7 @@ fun OnboardingScreen2(navController: NavController){
         Spacer(modifier = Modifier.height(30.dp))
 
         Button(
-            onClick = {},
+            onClick = {navController.navigate(route = ROUT_HOME)},
             colors= ButtonDefaults.buttonColors(Color.Magenta),
             shape = RoundedCornerShape(10.dp),
             modifier = Modifier.width(250.dp)

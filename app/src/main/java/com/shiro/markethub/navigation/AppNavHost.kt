@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import com.shiro.markethub.ui.screens.auth.LoginScreen
 import com.shiro.markethub.ui.screens.auth.RegisterScreen
 import com.shiro.markethub.ui.screens.home.HomeScreen
+import com.shiro.markethub.ui.screens.intent.IntentScreen
 import com.shiro.markethub.ui.screens.onboarding.OnboardingScreen1
 import com.shiro.markethub.ui.screens.onboarding.OnboardingScreen2
 import com.shiro.markethub.ui.screens.onboarding.OnboardingScreen3
@@ -51,6 +52,10 @@ fun AppNavHost(
                 OnboardingScreen3(navController )
 
         }
+        composable(ROUT_INTENT) {
+            IntentScreen(navController)
+
+        }
 
 
 
@@ -82,5 +87,5 @@ fun AppNavHost(
 
 
 
-    }
+        }
 }

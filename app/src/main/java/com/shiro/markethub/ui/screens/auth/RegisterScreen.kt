@@ -13,14 +13,11 @@ fun RegisterScreen(navController: NavController){
     Column(
         modifier = Modifier.fillMaxSize()
 
-
     ) {
 
-    }
-
-
 
     }
+}
 
 @Preview(showBackground = true)
 @Composable
