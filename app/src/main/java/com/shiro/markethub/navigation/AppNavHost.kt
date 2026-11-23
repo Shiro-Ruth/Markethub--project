@@ -6,6 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.shiro.markethub.ui.screens.Scaffold.ScaffoldScreen
 import com.shiro.markethub.ui.screens.auth.LoginScreen
 import com.shiro.markethub.ui.screens.auth.RegisterScreen
 import com.shiro.markethub.ui.screens.home.HomeScreen
@@ -57,10 +58,15 @@ fun AppNavHost(
 
         }
 
+        composable(ROUT_SPLASH) {
+            IntentScreen(navController)
 
 
+        }
 
-
+        composable(ROUT_SCAFFOLD) {
+            ScaffoldScreen(navController)
+        }
 
 
 

@@ -44,7 +44,6 @@ fun OnboardingScreen2(navController: NavController){
 
 
 
-
         )
 
         Spacer(modifier = Modifier.height(30.dp))

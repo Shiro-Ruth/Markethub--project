@@ -8,5 +8,7 @@ const val ROUT_ONBOARDING2 ="onboarding2"
 const val ROUT_ONBOARDING3 ="onboarding3"
 const val ROUT_INTENT ="intent"
 
+const val ROUT_SPLASH="splash"
 
+const val ROUT_SCAFFOLD="scaffold"
 
