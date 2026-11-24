@@ -8,6 +8,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.ShoppingCart
@@ -35,6 +36,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.shiro.markethub.navigation.ROUT_HOME
+import com.shiro.markethub.navigation.ROUT_INTENT
 import com.shiro.markethub.navigation.ROUT_SPLASH
 import com.shiro.markethub.ui.screens.intent.IntentScreen
 
@@ -80,8 +82,8 @@ fun ScaffoldScreen(navController: NavController){
                 containerColor = Color.Magenta
             ){
                 NavigationBarItem(
-                    icon = { Icon(Icons.Default.Person, contentDescription = "Home") },
-                    label = { Text("Login") },
+                    icon = { Icon(Icons.Default.Home, contentDescription = "Home") },
+                    label = { Text("Home") },
                     selected = selectedIndex == 0,
                     onClick = {
                         selectedIndex = 0
@@ -94,7 +96,7 @@ fun ScaffoldScreen(navController: NavController){
                     label = { Text("Favorites") },
                     selected = selectedIndex == 1,
                     onClick = { selectedIndex = 1
-                        navController.navigate(ROUT_HOME)
+                        navController.navigate(ROUT_INTENT)
                     }
                 )
 

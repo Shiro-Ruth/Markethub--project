@@ -28,7 +28,7 @@ fun SplashScreenScreen(navController: NavController){
 
 //Navigation
     val x = rememberCoroutineScope()
-    x.launch {
+    x.launch{
         delay(2000)
         navController.navigate( route = ROUT_SPLASH)
     }
