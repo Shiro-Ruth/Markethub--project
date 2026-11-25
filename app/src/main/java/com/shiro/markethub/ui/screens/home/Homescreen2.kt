@@ -35,6 +35,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -207,8 +208,11 @@ fun HomeScreen2(navController: NavController){
                     colors = ButtonDefaults.buttonColors(Color.Magenta),
                     shape = RoundedCornerShape(10.dp),
                     modifier = Modifier.width(250.dp)
+                                       .align(Alignment.CenterHorizontally)
+
                 ) {
-                    Text(text = "Get started")
+                    Text(text = "Buy now" +
+                            "")
 
                 }
 

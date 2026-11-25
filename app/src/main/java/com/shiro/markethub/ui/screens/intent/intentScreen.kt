@@ -38,6 +38,7 @@ import androidx.core.net.toUri
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.shiro.markethub.navigation.ROUT_INTENT
+import com.shiro.markethub.navigation.ROUT_ONBOARDING1
 import com.shiro.markethub.navigation.ROUT_ONBOARDING2
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -56,7 +57,7 @@ fun IntentScreen(navController: NavController){
             title = { Text(text = "Android Intent") },
 
             navigationIcon = {
-                IconButton(onClick = {}) {
+                IconButton(onClick = {navController.navigate(ROUT_ONBOARDING1)}) {
                     androidx.compose.material3.Icon(
                         imageVector = Icons.Default.Menu,
                         contentDescription = "menu"

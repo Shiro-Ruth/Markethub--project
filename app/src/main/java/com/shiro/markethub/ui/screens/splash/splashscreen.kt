@@ -44,7 +44,7 @@ fun SplashScreenScreen(navController: NavController){
     ) {
 
         Image(
-            painter = painterResource(R.drawable.delivery),
+            painter = painterResource(R.drawable.img_4),
             contentDescription = "product",
             modifier = Modifier.height(200.dp).width(200.dp)
 

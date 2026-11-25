@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "599436344720",
+    "project_id": "markethub-43077",
+    "storage_bucket": "markethub-43077.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599436344720:android:f960354861ad5031304715",
+        "android_client_info": {
+          "package_name": "com.shiro.markethub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgmo6XwECyOzO5vDEgQdJZElBGPxoMCs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

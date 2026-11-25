@@ -58,7 +58,7 @@ fun RegisterScreen(navController: NavController) {
     ){
 
         Image(
-            painter = painterResource(R.drawable.img),
+            painter = painterResource(R.drawable.img_1),
             contentDescription = "product",
             modifier = Modifier.height(200.dp).width(200.dp)
         )
@@ -73,6 +73,7 @@ fun RegisterScreen(navController: NavController) {
             color = Color.Magenta,
             textAlign = TextAlign.Center
         )
+        
         Spacer(modifier = Modifier.height(30.dp))
 
         //Username
