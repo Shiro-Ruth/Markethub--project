@@ -26,6 +26,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -37,6 +38,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.shiro.markethub.R
+import com.shiro.markethub.data.AuthViewModel
 
 @Composable
 fun LoginScreen(navController: NavController){
@@ -118,9 +120,17 @@ fun LoginScreen(navController: NavController){
 
         )
         Spacer(modifier = Modifier.height(30.dp))
+        val context = LocalContext.current
+        val authViewModel = AuthViewModel(navController, context)
+
 
         Button(
-            onClick = {},
+            onClick = {
+                authViewModel.login(email, password)
+
+
+
+            },
             colors= ButtonDefaults.buttonColors(Color.Magenta),
             shape = RoundedCornerShape(10.dp),
             modifier = Modifier.width(250.dp)

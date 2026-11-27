@@ -13,4 +13,5 @@ const val ROUT_SPLASH="splash"
 const val ROUT_SCAFFOLD="scaffold"
 const val ROUT_HOME2="home2"
 
-
+const val ROUT_UPLOAD_ORDER= "uploadorder"
+const val ROUT_VIEW_ORDER= "vieworder"

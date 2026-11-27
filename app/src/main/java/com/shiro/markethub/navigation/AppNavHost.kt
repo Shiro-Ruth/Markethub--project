@@ -6,6 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.shiro.markethub.ui.screen.order.ViewOrdersScreen
 import com.shiro.markethub.ui.screens.Scaffold.ScaffoldScreen
 import com.shiro.markethub.ui.screens.auth.LoginScreen
 import com.shiro.markethub.ui.screens.auth.RegisterScreen
@@ -15,6 +16,7 @@ import com.shiro.markethub.ui.screens.intent.IntentScreen
 import com.shiro.markethub.ui.screens.onboarding.OnboardingScreen1
 import com.shiro.markethub.ui.screens.onboarding.OnboardingScreen2
 import com.shiro.markethub.ui.screens.onboarding.OnboardingScreen3
+import com.shiro.markethub.ui.screens.order.OrderUploadScreen
 
 
 @Composable
@@ -73,6 +75,13 @@ fun AppNavHost(
             HomeScreen2(navController)
         }
 
+        composable(ROUT_UPLOAD_ORDER) {
+            OrderUploadScreen(navController)
+        }
+
+        composable(ROUT_VIEW_ORDER) {
+            ViewOrdersScreen(navController)
+        }
 
 
 
